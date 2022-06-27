@@ -11,16 +11,20 @@ namespace TownOfSuper
     public class TosPlugin : BasePlugin
     {
         public const String Id = "jp.reitou-mugicha.townofsuper";
-        public const String Version = "1.1.0-updateFix";
+        public const String Version = "1.1.1";
 
         public static ConfigEntry<bool>? debugTool { get; set; }
         public static ConfigEntry<string>? StereotypedText { get; set; }
 
+        public static List<(string, byte)>? MessagesToSend;
+        public static ConfigEntry<int>? MessageWait { get; private set; }
         public Harmony Harmony = new Harmony(Id);
         public override void Load()
         {
             debugTool = Config.Bind("Client Options", "Debug Tool", false);
             StereotypedText = Config.Bind("Client Options", "StereotypedText", "TownOfSuper定型文");
+            MessagesToSend = new List<(string, byte)>();
+            MessageWait = Config.Bind("Other", "MessageWait", 1);
 
             Harmony.PatchAll();
         }
@@ -40,7 +44,7 @@ namespace TownOfSuper
     {
         public static void Postfix(VersionShower __instance)
         {
-            __instance.text.text += " & <color=#4169e1>TownOfSuper</color> ver." + TosPlugin.Version;
+            __instance.text.text += " & <color=#4169e1>TownOfSuper</color> & <color=#200010>AZ</color> ver." + TosPlugin.Version;
         }
     }
 }
