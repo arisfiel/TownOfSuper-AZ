@@ -3,8 +3,6 @@
 using System.Collections.Generic;
 using HarmonyLib;
 using UnityEngine;
-using Hazel;
-using System.Linq;
 
 namespace TownOfSuper.Patches
 {
@@ -144,22 +142,6 @@ namespace TownOfSuper.Patches
                 }
             }
         }
-        [HarmonyPatch(typeof(ChatController), nameof(ChatController.Update))]
-        class ChatUpdatePatch
-        {
-            public static void Postfix(ChatController __instance)
-            {
-                if (!AmongUsClient.Instance.AmHost || TosPlugin.MessagesToSend?.Count < 1 || (TosPlugin.MessagesToSend[0].Item2 == byte.MaxValue && TosPlugin.MessageWait?.Value > __instance.TimeSinceLastMessage)) return;
-                var player = PlayerControl.AllPlayerControls.ToArray().OrderBy(x => x.PlayerId).Where(x => !x.Data.IsDead).FirstOrDefault();
-                (string msg, byte sendTo) = TosPlugin.MessagesToSend[0];
-                TosPlugin.MessagesToSend.RemoveAt(0);
-                int clientId = sendTo == byte.MaxValue ? -1 : ModHelpers.GetPlayerById(sendTo).GetClientID();
-                if (clientId == -1) DestroyableSingleton<HudManager>.Instance.Chat.AddChat(player, msg);
-                MessageWriter writer = AmongUsClient.Instance.StartRpcImmediately(player.NetId, (byte)RpcCalls.SendChat, SendOption.None, clientId);
-                writer.Write(msg);
-                AmongUsClient.Instance.FinishRpcImmediately(writer);
-                __instance.TimeSinceLastMessage = 0f;
-            }
-        }
+
     }
 }
