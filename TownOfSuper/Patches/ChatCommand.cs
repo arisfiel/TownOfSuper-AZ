@@ -2,7 +2,6 @@
 
 using HarmonyLib;
 using System.Linq;
-using Hazel;
 
 namespace TownOfSuper.Patches
 {
@@ -195,7 +194,7 @@ namespace TownOfSuper.Patches
                     }
                     break;
             }
-            
+
             if (handled)
             {
                 __instance.TextArea.Clear();
