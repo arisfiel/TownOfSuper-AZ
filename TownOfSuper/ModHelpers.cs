@@ -39,12 +39,5 @@ namespace TownOfSuper
                 return "";
             }
         }
-
-        public static PlayerControl GetPlayerById(int PlayerId)
-        {
-            return PlayerControl.AllPlayerControls.ToArray().Where(pc => pc.PlayerId == PlayerId).FirstOrDefault();
-        }
-
-
     }
 }
