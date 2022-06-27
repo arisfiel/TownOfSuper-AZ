@@ -1,0 +1,10 @@
+H:\Code\ToS\townofsuper\bin\Debug\netstandard2.1\TownOfSuper.deps.json
+H:\Code\ToS\townofsuper\bin\Debug\netstandard2.1\TownOfSuper.dll
+H:\Code\ToS\townofsuper\bin\Debug\netstandard2.1\TownOfSuper.pdb
+H:\Code\ToS\townofsuper\obj\Debug\netstandard2.1\TownOfSuper.csproj.AssemblyReference.cache
+H:\Code\ToS\townofsuper\obj\Debug\netstandard2.1\TownOfSuper.GeneratedMSBuildEditorConfig.editorconfig
+H:\Code\ToS\townofsuper\obj\Debug\netstandard2.1\TownOfSuper.AssemblyInfoInputs.cache
+H:\Code\ToS\townofsuper\obj\Debug\netstandard2.1\TownOfSuper.AssemblyInfo.cs
+H:\Code\ToS\townofsuper\obj\Debug\netstandard2.1\TownOfSuper.csproj.CoreCompileInputs.cache
+H:\Code\ToS\townofsuper\obj\Debug\netstandard2.1\TownOfSuper.dll
+H:\Code\ToS\townofsuper\obj\Debug\netstandard2.1\TownOfSuper.pdb

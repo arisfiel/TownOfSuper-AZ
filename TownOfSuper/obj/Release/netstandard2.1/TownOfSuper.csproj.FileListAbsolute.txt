@@ -1,0 +1,10 @@
+H:\Code\AmongUs\ToS\TownOfSuper\bin\Release\netstandard2.1\TownOfSuper.deps.json
+H:\Code\AmongUs\ToS\TownOfSuper\bin\Release\netstandard2.1\TownOfSuper.dll
+H:\Code\AmongUs\ToS\TownOfSuper\bin\Release\netstandard2.1\TownOfSuper.pdb
+H:\Code\AmongUs\ToS\TownOfSuper\obj\Release\netstandard2.1\TownOfSuper.csproj.AssemblyReference.cache
+H:\Code\AmongUs\ToS\TownOfSuper\obj\Release\netstandard2.1\TownOfSuper.GeneratedMSBuildEditorConfig.editorconfig
+H:\Code\AmongUs\ToS\TownOfSuper\obj\Release\netstandard2.1\TownOfSuper.AssemblyInfoInputs.cache
+H:\Code\AmongUs\ToS\TownOfSuper\obj\Release\netstandard2.1\TownOfSuper.AssemblyInfo.cs
+H:\Code\AmongUs\ToS\TownOfSuper\obj\Release\netstandard2.1\TownOfSuper.csproj.CoreCompileInputs.cache
+H:\Code\AmongUs\ToS\TownOfSuper\obj\Release\netstandard2.1\TownOfSuper.dll
+H:\Code\AmongUs\ToS\TownOfSuper\obj\Release\netstandard2.1\TownOfSuper.pdb
