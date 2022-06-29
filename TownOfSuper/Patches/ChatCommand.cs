@@ -197,7 +197,7 @@ namespace TownOfSuper.Patches
                     }
                     break;
             }
-            
+
             if (handled)
             {
                 __instance.TextArea.Clear();
@@ -206,7 +206,7 @@ namespace TownOfSuper.Patches
             return !handled;
         }
     }
-
+/*
     [HarmonyPatch(typeof(ChatController), nameof(ChatController.Update))]
     public class ChatUpdatePatch
     {
@@ -219,7 +219,7 @@ namespace TownOfSuper.Patches
             __instance.TimeSinceLastMessage = 130f;
         }
     }
-
+*/
     public class Chat
     {
         public static void SendPrivateChat(string text)
